@@ -1,9 +1,12 @@
-import React from 'react';
+import "./welcome.scss"
 
 const Welcome = () => {
     return (
         <>
-            <h2>Good morning (Insert Name Here)</h2>
+        <header className="header">
+            <h2 className="header__welcome">Good morning (Name)!</h2>
+            <i className="fas fa-shopping-cart"></i>
+        </header>
         </>
     );
 }

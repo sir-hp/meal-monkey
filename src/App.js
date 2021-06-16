@@ -1,10 +1,16 @@
 import './App.css';
-import Welcome from './components/Welcome';
+import { Router } from '@reach/router';
+import TheMeal from './components/TheMeal';
+import Meal from './components/Meal'
 
 function App() {
   return (
     <>
-    <Welcome/>
+      <Router>
+        <TheMeal path="/" />
+        <Meal path="/:category" />
+
+      </Router>
     </>
   );
 }
